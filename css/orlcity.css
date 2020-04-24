@@ -1,0 +1,723 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url("../fonts/OpenSans/OpenSans-Light.ttf");
+    font-size: 1em;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    /*background-color: #5e299a;*/      /*caso eu queira um roxo sem ter transparencia*/
+    background-color: rgba(94, 41, 154, .8);
+    z-index: 2;     /*para o escudo ficar por cima da imagem da bola*/
+    position: relative;
+}
+
+header .container {
+    position: relative;    /*para aceitar que o logotipo sobrescreva*/
+}
+
+header .header-black {
+    background-color: #000;
+    height: 40px;
+}
+
+header .header-black li {       /*todas que estão dentro da lista header black*/
+    background-image: url("../img/clubs.png");
+    background-repeat: no-repeat;
+    display: inline-block;      /*para fazer horizontal*/
+    margin: 4px;                /*para dar distancias entre os clubs*/
+}
+
+header .header-black li.club-01 {
+    background-position: 0px 0px;
+}
+header .header-black li.club-02 {
+    background-position: -48px 0px;
+}
+header .header-black li.club-03 {
+    background-position: -95px 0px;
+}
+header .header-black li.club-04 {
+	background-position: -140px 0px;
+}
+header .header-black li.club-05 {
+	background-position: -189px 0px;
+}
+header .header-black li.club-06 {
+	background-position: -239px 0px;
+}
+header .header-black li.club-07 {
+	background-position: -288px 0px;
+}
+header .header-black li.club-08 {
+	background-position: -334px 0px;
+}
+header .header-black li.club-09 {
+	background-position: -381px 0px;
+}
+header .header-black li.club-10 {
+	background-position: -429px 0px;
+}
+header .header-black li.club-11 {
+	background-position: -478px 0px;
+}
+header .header-black li.club-12 {
+	background-position: -527px 0px;
+}
+header .header-black li.club-13 {
+	background-position: -579px 0px;
+}
+header .header-black li.club-14 {
+	background-position: -629px 0px;
+}
+header .header-black li.club-15 {
+	background-position: -671px 0px;
+}
+header .header-black li.club-16 {
+	background-position: -719px 0px;
+}
+
+header .header-black li.club-17 {
+	background-position: -763px 0px;
+}
+
+header .header-black li.club-18 {
+	background-position: -808px 0px;
+}
+
+header .header-black li.club-19 {
+	background-position: -853px 0px;
+}
+
+header .header-black li.club-20 {
+	background-position: -900px 0px;
+}
+
+header .header-black li.club-21 {
+	background-position: -950px 0px;
+}
+
+header .header-black li.club-22 {
+	background-position: -1000px 0px;
+}
+
+header .header-black li a {     /*todas as tags a dentro do li*/
+    width: 32px;
+    height: 32px;
+    display: block;             /*faz a atividade de altura e largura*/
+
+}
+
+header #logotipo {
+    position: absolute; /*para sobrescever o header preto e a img*/
+    top: -20px;  /*a imagem estava posicionada apenas sobre a imagem, então com -20px, sobrescreve o header preto*/
+}
+
+#banner h1.efeito {
+    color: red;
+    font-size: 12em; 
+    transition: 1s;
+}
+
+#menu {             /*esta colocando o menu a direita*/
+    margin: 39px 0;             /*ajusta o menu no meio da div roxa*/
+    position: absolute;
+    right: 0;
+}
+
+#menu li {
+    display: inline-block;      /*faz com que o menu fique em linha reta*/
+    font-family: "OpenSans";
+}
+#menu li.search {
+    width: 182px;
+    transition: 1s;
+}
+#menu li.search.ativo {
+    width: 300px;
+}
+
+#menu li.search input {
+    background-color: #5c2d90;
+    color: #fff;
+    border: none;
+}
+
+#menu li.search.ativo input{
+    width: 300px;
+}
+
+#menu li.search ::-webkit-input-placeholder {
+    color: #fff;
+    padding-left: 5px;
+}
+
+#menu li.search button {
+    background: none;
+    border: none;
+    position: absolute;         /*ajusta dentro do container*/
+    right: 3px;                 /*aproximou do escrito search*/
+    top: 0px;
+}
+
+#menu li.search button i {          /*modificando a cor da lupa do font awesome*/
+    color: rgba(255, 255, 255, .5);
+}
+
+#menu li a {            /*para que os escritos do menu fiquem brancos e com links*/
+    color: white;
+    font-size: 16px;
+    padding: 10px 25px;
+}
+
+#banner {
+    height: 1053px;
+    background: url("../img/banner.jpg") no-repeat;
+    background-size: 100%;
+    position: relative;
+    top: -250px;
+}
+
+#banner h1 {
+    color: #fff;
+    top: 550px;         /*top só ta funcionando por causa do position: relative*/
+    position: relative;
+    font-size: 102px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .9);
+    font-family: "OpenSans-Light";
+    margin-left: 150px;
+}
+#banner h1 small {
+    font-size: 42px;
+    display: block;     /*faz com que quebre a linha entre o h1 e o small*/
+    color: #fff;
+    font-weight: bold;      /*negrito*/
+    margin-left: 9px;
+}
+
+#news {
+    position: relative;
+    top: -150px;
+}
+
+#news h2 {
+    color: #5e2799;
+    font-family: "OpenSans-Light";
+    font-size: 48px;
+    text-transform: uppercase; /*transformando o escrito todo em maiúsculo*/
+    position: relative;
+    margin: 0 auto;
+}
+
+#news hr { 
+    border: #FDE192 solid 3px;    
+    width: 200px;    
+    margin: 0 auto;
+}
+
+#news .thumbnails {
+    margin-top: 40px;
+}
+#news .thumbnails h3 {
+    color: #5e299a;
+    font-size: 18px;
+    font-family: "OpenSans";
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0; /*tira a margim entre a data*/
+}
+
+#news .thumbnails time {
+    color: #a7a7a7;
+    font-size: 18px;
+    font-family: "OpenSans";
+}
+
+
+#estatisticas {
+    background-color: #5e299a;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+#estatisticas p {
+    color: #fde092;
+    text-transform: uppercase;
+    font-family: "OpenSans-Light";
+    font-size: 64px;
+    margin-top: 34px;
+}
+#estatisticas p small {
+    color: #fff;
+    font-size: 24px;
+    display: block; /*elemento em bloco*/
+}
+
+#call-to-action {
+    text-align: center;
+    margin-top: 105px;
+}
+#call-to-action h2 {
+    color: #5e2799;
+    font-family: "OpenSans-Light";
+    font-size: 48px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#call-to-action hr { 
+    border: #FDE192 solid 3px;    
+    width: 200px;    
+    margin: 0 auto;
+}
+
+#call-to-action p {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: #656565;
+}
+
+#call-to-action .btn {
+    min-width: 164px;
+    height: 44px;
+    line-height: 30px;
+}
+
+#call-to-action .btn-roxo {
+    color: #fff;
+    background-color: #53299a;
+    border-color: #53299a;
+    margin-right: 35px;
+}
+
+#call-to-action .btn-amarelo {
+    color: black;
+    background-color: #FDE192;
+    border-color: #FDE192;
+    margin-left: 35px;
+}
+
+div .col-xs-6 {
+    display: inline-block;
+}
+
+/* #call-to-action .row-max-400 {
+    margin: 0 auto;
+    max-width: 400px;
+} */
+
+
+footer {
+    margin-top: 115px;
+}
+
+footer .row {
+    width: 100%;    /*para não estourar a tela*/
+    margin: 0;      /*para concertar o footer na tela toda*/
+}
+footer .row p {
+    line-height: 57px;
+    margin-bottom: 0;
+}
+
+footer .row-cinza-claro {
+    height: 200px;
+    background-color: #171f26;
+}
+footer .row-cinza-escuro {
+    /* height: 60px;            //comentei pq ficava uma pequena linha branca no final da página*/
+    background-color: #11171d;
+    border-top: #242d37 1px solid; /*para colocar uma bordinha no topo*/
+}
+footer .float-left {
+    font-family: "OpenSans";
+    font-size: 14px;
+    color: #666;
+    margin-top: 9px; /*caso queira voltar o footer como o vídeo, APAGAR AQUI*/
+}
+
+footer .text-roxo {
+    color: #623291;
+    font-family: "OpenSans";
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer .logotipo {
+    margin-top: 28px;
+}
+footer .col-popular-post,
+footer .col-links,
+footer .col-get-in-touch {
+    margin-top: 40px;
+}
+
+footer .row-cols h4{
+    font-family: "OpenSans";
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 8px;       /*(prof colocou 17px) distancia para a linha do border-bottom*/
+    border-bottom: #242d37 1px solid;
+}
+
+footer .row-cols h5 {
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+footer .row-cols time {
+    color: #fde092;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+footer .col-links a,
+footer .col-get-in-touch a {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+footer .col-links .fa{
+    margin: 0 6px;
+}
+footer .col-get-in-touch address {
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 6px;
+    margin-left: 1px;
+}
+footer .col-get-in-touch address span {
+    display: inline-block;
+    margin-left: 4px;
+}
+footer .col-get-in-touch address i {        /*icone do local*/
+    position: relative;
+    top: -14px;
+}
+footer .col-get-in-touch i {
+    color: #9b9b9b;
+    font-size: 20px;
+    margin: 0 6px;
+}
+footer .col-get-in-touch a {
+    color: #666;
+}
+footer .col-get-in-touch p {
+    line-height: 20px;
+}
+footer .list-socials {
+    margin-top: 12px;
+    margin-left: 3px;
+}
+footer .list-socials li {
+    display: inline-block;
+}
+footer .list-socials a {
+    display: block;
+    border: #9b9b9b 1px solid;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 14px;
+    text-align: center;
+    margin-left: 10px; /*distancia entre eles*/
+}
+footer .list-socials i {
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+footer .desenvolvidoV { /*APAGAR V PARA IGUAL DO VIDEO*/
+    color: #666;
+    font-family: "OpenSans-Light";
+    font-size: 12px;
+    font-weight: bold;  /*APAGAR AQUI*/
+    margin-top: -50px;  /*APAGAR AQUI*/
+}
+
+.owl-carousel, 
+.owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    padding: 4px;       /*entre as imgs*/
+}
+
+.owl-theme .owl-nav {       /*setinhas roxas*/
+    margin-top: 5px;
+}
+.owl-theme .owl-nav [class*=owl-] {
+    color: #FFF;
+    font-size: 30px!important;
+    margin: 0px 20px;
+    padding: 4px 7px;
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#news .thumbnails {
+    margin-top: 40px;
+    color: #5d15a5;
+}
+
+
+#btn-bars, #btn-search, #btn-news-prev, #btn-news-next {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*      FIM DA PAGINA INDEX     */
+/*      iNICIO DA PÁGINA VIDEOS     */
+video {
+    width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*      PÁGINA SHOP     */
+.text-arial-cinza{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666;
+}
+.text-roxo {
+    color: #6e3ea4;
+}
+
+#destaque-produtos-container {
+    position: relative;
+}
+#destaque-produtos {
+    margin: 55px auto;
+}
+#destaque-produtos .col-imagem {
+    text-align: center;
+}
+#destaque-produtos .col-imagem img{
+    max-width: 100%;
+    max-height: 250px;
+}
+#imgCelular{
+    display: inline-block;
+    width: auto;
+}
+#destaque-produtos .item {
+    display: inline-block;
+}
+#destaque-produtos .col-descricao {
+    margin-top: 15px;
+}
+#destaque-produtos .col-descricao h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 10px;
+}
+#destaque-produtos .col-descricao .box-valor {
+    width: 100%;
+    position: relative;
+
+}
+#destaque-produtos .col-descricao .box-valor .text-reais {
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 13px;
+    left: 28px;
+}
+#destaque-produtos .col-descricao .box-valor .text-valor {
+    font-size: 50px;
+    position: absolute;
+    top: -17px;
+    left: 54px;
+}
+#destaque-produtos .col-descricao .box-valor .text-valor-centavos {
+    font-size: 30px;
+    position: absolute;
+    top: -10px;
+    left: 179px;
+}
+#destaque-produtos .col-descricao .btn-comprar {
+    font-size: 26px;
+    padding: 10px 0;
+}
+#destaque-produtos .col-descricao .btn-comprar .fa{
+    font-size: 34px;
+}
+#destaque-produtos .col-descricao .text-parcelas {
+    margin-top: 20px;
+}
+#btn-destaque-prev {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    background: none;
+    border: none;
+    font-size: 64px;
+    color: #5e299a;
+    outline: none;
+    z-index: 15;
+}
+#btn-destaque-prev:hover {              
+    color: #8000ff;    
+}
+#btn-destaque-next {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    background: none;
+    border: none;
+    font-size: 64px;
+    color: #5e299a;
+    outline: none;
+    z-index: 14;
+}
+#btn-destaque-next:hover {              
+    color: #8000ff;    
+}
+
+.col-md-3 {
+    padding: 0 10px;
+}
+#promocoes {
+    margin: 60px auto;
+}
+#promocoes .box-promocao {
+    background-color: #6e3ea4;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+#promocoes .box-promocao.box-1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 7px;
+}
+#promocoes .box-promocao.box-1 p {
+    position: absolute;
+    top: 63px;
+}
+#promocoes .box-promocao .text-ate {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+}
+#promocoes .box-promocao .text-numero {
+    font-size: 128px;
+    font-family: "OpenSans-Light";
+    position: absolute;
+    left: 8px;
+    top: -17px;
+}
+#promocoes .box-promocao .text-porcento {
+    font-size: 65px;
+    font-family: "OpenSans";
+    position: absolute;
+    top: 11px;
+    right: 10px; /*4*/
+
+}
+#promocoes .box-promocao .text-off {
+    font-size: 39px;
+    font-family: "OpenSans-Light";
+    position: absolute;
+    top: 84px;
+    right: 16px; /*11*/
+}
+.box-produto-info a {
+    text-decoration: none;
+}
+.box-produto-info h3 {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+}
+.box-produto-descr {
+    margin-top: 25px;
+    padding-left: 40px;
+}
+.box-produto-info .text-valor {
+    font-size: 26px;
+    font-weight: bold;    
+}
+.title-default-roxo {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+.title-default-roxo h2 {
+    color: #5e2799;
+    font-family: "OpenSans-Light";
+    font-size: 48px;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0 auto;
+}
+.title-default-roxo hr {
+    border: #FDE192 solid 3px;
+    width: 200px;
+    margin: 0 auto;
+}
+/* section .owl-item.active {
+    width: 100%!important;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,310 @@
+/* TAMANHO PADRÃO PARA TABLETS */
+@media only screen and (max-width: 768px) {
+    .header-black ul {
+        display: none;
+    }
+}
+
+
+/* TAMANHO PADRÃO PARA SMARTPHONES */
+@media only screen and (max-width: 480px) {
+    .header-black ul, #menu {
+        display: none;
+    }
+    #logotipo {
+        left: 35%;
+    }
+    #btn-bars, #btn-search {
+        color: #fff;
+        font-size: 22px;
+        position: absolute;
+        top: 2px;
+        background: none;
+        border: none;
+    }
+    #btn-bars {
+        left: 5px;
+        display: block;
+        z-index: 4;
+    }
+    #btn-search {
+        right: 5px;
+        display: block;
+        z-index: 5;
+    }
+    #banner {
+        height: 317px;
+        background-size: cover;
+        top: -160px;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+    #banner h1 {
+        top: 195px;
+        font-size: 48px;
+        margin-left: 0;
+    }
+    #banner h1 small {
+        font-size: 22px;
+        margin-left: 0px;
+    }
+    #news {
+        margin-bottom: -79px; /*tava -60, mudei pra igualar quando abrir menu*/
+    }
+    #news h2 {
+        font-size: 32px;
+    }
+    #news .thumbnails h3{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .thumbnails {
+        text-align: center;
+    }
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 80%;
+        margin: 0 auto; /*alinhando imagem ao centro apos diminuir seu tamanho para 80%*/
+    }
+    .owl-theme .owl-nav {               
+        display: none;          /*apagando os navegadores setinhas das noticias do browser*/
+    }
+    .owl-theme .owl-dots, .owl-theme .owl-nav {         
+        display: none;          /*apagando os navegadores bolinhas das noticias*/
+    }
+    #btn-news-prev, #btn-news-next {
+        background: none;
+        border: none;
+        color: #5e2699;
+        font-size: 48px;
+        display: block;     /*para aparecer aqui já que apaguei do browser*/
+        position: absolute;     /*pq ja tava dentro de um relative, ai no absolute um sobrepoe o outro*/
+        top: 126px;
+        z-index: 2;
+        outline: 0; /*tira o cortornozin ao clicar*/
+    }
+    #btn-news-next {
+        right: 15px;       
+    }
+
+
+    #estatisticas {
+        height: inherit; /*fez com que a faixa roxa cubrisse tudo que era necessário*/
+    }
+    #estatisticas p {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    #call-to-action {
+        margin-top: 69px;
+    }
+    #call-to-action p {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 30px;      /*para alinhar o texto fazendo a quebra de linha*/
+        margin-right: 30px;     /*para alinhar o texto fazendo a quebra de linha*/
+    }
+    #call-to-action h2 {
+        font-size: 32px;
+        margin-left: 30px;      /*para alinhar o texto fazendo a quebra de linha*/
+        margin-right: 30px;     /*para alinhar o texto fazendo a quebra de linha*/
+    }
+    #call-to-action .btn {
+        min-width: 130px;       /*diminui o tamanho dos botões*/
+    }
+    #call-to-action .btn-roxo {
+        float: left;
+        margin-right: 25px;
+    }
+    #call-to-action .btn-amarelo {
+        float: right;
+        margin-left: 0px;
+    }
+
+    footer {
+        margin-top: 85px;
+    }
+    .copyright-mobile{
+        margin-bottom: -5px;
+    }
+    .copyright-mobile p {
+        font-size: 10px;
+        line-height: 0;
+    }
+    .copyright-mobile .float-left{
+        float: inherit!important;
+    }
+    footer .row p {
+        text-align: center;
+        line-height: 20px;
+    }
+    footer .row p:first-child {
+        margin-top: 10px;
+    }
+    footer .text-roxo {
+        margin-right: 38px;
+    }
+    footer .desenvolvidoV {
+        font-size: 9px;
+        line-height: 3!important;
+        margin-top: 0!important;
+        float: inherit!important;
+    }
+
+    footer .list-socials{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 45px;
+    }
+    /* footer .col-md-10 {      estava colocando pra esquerda
+        padding: 0;
+    } */
+    footer .list-socials a {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    footer .list-socials i {
+        font-size: 30px;
+        margin: 0px; 
+        padding-right: 2px;
+        padding-left: 3px;
+        padding-top: 6px;
+        
+    }
+    footer .row-cinza-claro {
+        height: 157px;
+    }
+    footer .btn-footer {
+        width: 100%;
+        background-color: #11171d;
+        height: 44px;
+        line-height: 35px;
+    }
+    footer .col-md-6 {
+        padding: 0;
+        padding-right: 5px;
+    }
+    footer .col-md-6:last-child {
+        padding-right: 0;
+        padding-left: 5px;
+    }
+    .d-block {
+        margin-top: -5px;
+    }
+    footer .d-block d-sm-none {
+        margin-top: 0;
+        display: inline-block;
+    }
+
+    .header-black{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 6;
+    }
+    header #logotipo {
+        position: absolute;
+        top: 20px;
+        z-index: 10; /*era 01*/
+        transition: 1s;
+    }
+    header.open-menu #logotipo{
+        transform: rotate(360deg);
+    }
+    header #menu-mobile {
+        position: fixed;
+        top: 45px;
+        background-color: #fff;
+        width: 80%;
+        height: 100%;
+        left: -80%;
+        transition: 1s;
+        z-index: 9;
+    }
+    header.open-menu #menu-mobile {
+        left: 0;
+    }
+    header.open-menu #menu-mobile-mask {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: 3;
+    }
+    header.open-menu #logotipo {
+        position: fixed;
+        top: 50px;
+        height: 95px;
+        left: calc(40% - 41px);
+    }
+    header.open-menu #menu-mobile ul{
+        margin: 20px;
+        margin-top: 130px;
+    }
+    header.open-menu #menu-mobile li {
+        text-align: center;
+        border-top: #ccc 1px solid;
+    }
+    header.open-menu #menu-mobile li:last-child {   /*para ter uma borda no bottom apenas do ultimo item da ul (schedule)*/
+        border-bottom: #ccc 1px solid;
+    }
+    header.open-menu #menu-mobile li a {
+        color: #633392;
+        font-family: "OpenSans";
+        font-weight: bold;
+        font-size: 16px;
+        padding: 18px;  /*distanciamento entre os itens*/
+        display: block;
+    }
+    header.open-menu .bar-close {
+        position: absolute;
+        bottom: 40px;
+        background-color: #633492;
+        height: 40px;
+        width: 100%; /*para ter a distancia toda do menu*/
+    }
+    header.open-menu .bar-close .btn-close {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 22px;
+        padding-left: 12px!important;
+        padding: 3px;
+    }
+    header #input-search-mobile {   /*sem open-seach*/
+        transition: 1s;
+        top: -40px;
+        position: fixed;
+        width: 70%;
+        left: 15%;
+        background-color: #000;
+        border: none;
+        height: 38px;
+        color: #fff;
+        z-index: 11;
+    }
+    header.open-search #input-search-mobile { /*com open-seach*/
+        top: 6px;
+        /* outline: 0; caso queria tirar a bordinha azul ao selecionar */
+    }
+    header.open-search #logotipo {  /*quando a caixa de search esta aberta, z-index do logotipo muda*/
+        z-index: 5;
+    }
+    header.open-search #logotipo {
+        position: fixed;
+        top: 45px;
+        height: 95px;
+        bottom: calc(52% - 41px);
+        margin-left: 21px;
+        transition: 1s;
+    }
+
+
+}
+
+
